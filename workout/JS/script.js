@@ -7,10 +7,11 @@ $(document).ready(function(){
     $('#button').click(function(){
         var toAdd = $("#checkListItem").val();
         var reps = $("#checkListReps").val();
-        $('.list').append('<div class="item">' + toAdd + "  |  " + reps +'</div>')
+        $('.list').append('<li class="item">' + toAdd + "  |  " + reps +'</li>')
         
     });
     $(document).on('click','.item', function(){
         $(this).remove();
     });
+    $('ol').sortable();
 });
