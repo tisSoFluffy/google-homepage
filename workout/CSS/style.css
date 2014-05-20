@@ -1,9 +1,11 @@
+form {
+    display: inline-block;
+}
 h2 {
     font-family:arial;
 }
-
-form {
-    display: inline-block;
+ul{
+	list-style-type: none;
 }
 
 #button{
@@ -19,10 +21,29 @@ form {
 	text-align:center;
 	margin-top:2px;
 }
+#instructions{
+	text-align: left;
+	background-color: #7DAAD5;
+	width:400px;
+	padding-left: 5px;
+}
+#instructions:hover{
+	cursor:move;
+}
 
 .list {
+	position:static;
 	font-family:garamond;
 	color:#372B2B;
 	background-color: #D1B7B7;
 	width:300px;
+	border-radius: 12px;
+	text-align: left;
+}
+
+.list:hover{
+	cursor:move;
+}
+fieldset{
+	width:400px;
 }

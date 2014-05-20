@@ -9,7 +9,8 @@
         <script src="JS/jquery-ui-1.10.4.custom.min.js"></script>
 	</head>
 	<body>
-		<h2>Select some workout</h2>
+		<h2>Create your workout</h2>
+		<fieldset>Workout
 		<form name="checkListForm">
 		<select id="checkListItem">
 			<option value="bench press">bench press</option>
@@ -21,7 +22,7 @@
 			<option value="running">running</option>
 			
 		</select>
-		<select id="checkListReps">
+		<select id="checkListReps" name = 'reps' >
 			<option value='1'>1</option>
 			<option value='2'>2</option>
 			<option value='3'>3</option>
@@ -43,10 +44,30 @@
 			<option value='19'>19</option>
 			<option value='20'>20</option>
 		</select>
+		<select id="checkListSets" name ='sets'>
+			<option value='1'>1</option>
+			<option value='2'>2</option>
+			<option value='3'>3</option>
+			<option value='4'>4</option>
+			<option value='5'>5</option>
+		</select>
+		
 		</form>
 		<div id="button">Add!</div>
+		</fieldset>
 		<div>
-		<ol class="list"></ol>
+		<ul class="list">Drag here<br>
+		</ul>
+		</div>
+		<div id="instructions"><p>Instructions</p>
+				<ol>
+				<li>All elements in this webpage are draggable.</li>
+				<li>Add to the Workout Plan</li>
+				<li>The workout plan is reconfigurable</li>
+				<li>You can drag the elements to rearrange the order</li>
+				<li>You can click items to delete them from the list</li>
+				<li>To remove the instructions, double click it!</li>
+				</ol>
 		</div>
 	</body>
 </html>

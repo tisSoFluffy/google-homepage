@@ -7,11 +7,17 @@ $(document).ready(function(){
     $('#button').click(function(){
         var toAdd = $("#checkListItem").val();
         var reps = $("#checkListReps").val();
-        $('.list').append('<li class="item">' + toAdd + "  |  " + reps +'</li>')
-        
+        var sets = $('#checkListSets').val();
+
+        $('.list').append('<li class="item">' + toAdd + " | reps " + reps +'</li>');  
     });
     $(document).on('click','.item', function(){
         $(this).remove();
     });
-    $('ol').sortable();
+    $('ul').sortable();
+    $('ul').draggable();
+    $('#instructions').draggable();
+    $('#instructions').dblclick(function(){
+        $(this).remove();
+    });
 });
